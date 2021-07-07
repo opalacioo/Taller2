@@ -30,7 +30,7 @@ pipeline
                      //   bat "C:\\apache-choucair\\bin\\jmeter -n -t -JJOB_NAME=Baseline_${env.BUILD_NUMBER}"
                         echo "Ejecutar Performance Test"
                      //   bat "bzt $WORKSPACE\\clima_cpt.yml $WORKSPACE\\passfail_config.yml"
-                         bat "bzt D:\\Datos_Leonardo\\Herramientas\\archivos_proyecto_carlos\Taller2\\clima_cpt.yml D:\\Datos_Leonardo\\Herramientas\\archivos_proyecto_carlos\Taller2\\passfail_config.yml"
+                         bat "bzt $WORKSPACE\\Datos_Leonardo\\Herramientas\\archivos_proyecto_carlos\Taller2\\clima_cpt.yml $WORKSPACE\\Datos_Leonardo\\Herramientas\\archivos_proyecto_carlos\Taller2\\passfail_config.yml"
                         perfReport './clima_cpt.xml'
                     } 
                     catch(ex)
